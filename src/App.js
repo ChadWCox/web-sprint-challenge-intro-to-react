@@ -12,11 +12,10 @@ const App = () => {
 
   return (
     <div className="App">
-        <h1 className="Header">Characters</h1>
-      <div className="body">
+        <h1 className="Header">Star Wars Characters</h1>
         <CharacterList/>
-      </div>
     </div>
+  
   );
 }
 

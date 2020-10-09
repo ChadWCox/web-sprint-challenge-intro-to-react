@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios"
 import CharacterCard from "./CharacterCard"
+import { Container, Row } from "reactstrap"
 
 export default function CharacterList() {
 
@@ -20,7 +21,8 @@ export default function CharacterList() {
     
     },[])
     return (
-        <div className="character">
+        <Container>
+            <Row>
             {characters.map((people, index) => {
                 return (
                     <CharacterCard  
@@ -32,8 +34,8 @@ export default function CharacterList() {
                         gender = {people.gender}/>
                 )
             })}
-        
-        </div>
+            </Row>
+        </Container>
 
 
 )
